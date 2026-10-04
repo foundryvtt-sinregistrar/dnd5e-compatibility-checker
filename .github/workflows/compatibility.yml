@@ -1,0 +1,64 @@
+name: Compatibilidad DND5e
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Repetir auditoría de la release actual
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: dnd5e-compatibility
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Pruebas
+        run: python -m unittest discover -s tests -v
+      - name: Analizar release y módulos
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          args=()
+          if [ "$FORCE" = "true" ]; then args+=(--force); fi
+          python scripts/check.py "${args[@]}"
+      - name: Conservar artefactos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: compatibility-reports
+          path: reports/
+          retention-days: 90
+      - name: Crear o actualizar Issue consolidado
+        if: always() && steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          REPORT: ${{ steps.check.outputs.report }}
+          TAG: ${{ steps.check.outputs.tag }}
+        run: python scripts/publish_issue.py
+      - name: Guardar histórico
+        if: always() && steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualizar informe de compatibilidad DND5e'
+            git push
+          fi

@@ -1,0 +1,7 @@
+{
+  "owner": "foundryvtt-sinregistrar",
+  "upstream": "foundryvtt/dnd5e",
+  "foundry_version": "14.368",
+  "exclude": ["dnd5e", "dnd5e-compatibility-checker"],
+  "contact": "foundryvtt@sinregistrar.es"
+}
