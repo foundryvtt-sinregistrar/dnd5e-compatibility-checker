@@ -1,7 +1,7 @@
 {
   "tag": "release-6.0.6",
   "previous": "release-6.0.5",
-  "date": "2026-10-07T05:58:52.655922+00:00",
+  "date": "2026-10-07T13:22:16.569913+00:00",
   "foundry": "14.368",
   "release_url": "https://github.com/foundryvtt/dnd5e/releases/tag/release-6.0.6",
   "modules": [
@@ -93,7 +93,7 @@
       "findings": [
         {
           "code": "AUDIT_FAILED",
-          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/dnd5e-spell-advancement.git', '/tmp/tmp_3cc6wui/dnd5e-spell-advancement']' returned non-zero exit status 128.",
+          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/dnd5e-spell-advancement.git', '/tmp/tmpm1j2q9vh/dnd5e-spell-advancement']' returned non-zero exit status 128.",
           "level": "error"
         }
       ]
@@ -250,7 +250,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-sdr2-es",
-      "sha": "e8acdb35fc6df66eb7a1c05cab07b7a6d9590246",
+      "sha": "1cbe712dd2d66b6ec75c2c1c2a1f5fb7517b39b1",
       "id": "translate-dnd5e-sdr2-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
