@@ -1,6 +1,6 @@
 # Informe DND5e — release-6.0.6
 
-Fecha UTC: 2026-10-09T13:15:57.676367+00:00
+Fecha UTC: 2026-10-09T22:37:45.474036+00:00
 Foundry objetivo: 14.368
 Comparación: release-6.0.5 → release-6.0.6
 
@@ -43,7 +43,7 @@ Auditoría estática: PASS no acredita compatibilidad funcional. ERROR indica fa
 - Tarea Codex: revisar los hallazgos con sus archivos, adaptar lo necesario y ejecutar una prueba en Foundry con las dependencias indicadas. No cambiar verified automáticamente.
 
 ## foundryvtt-sinregistrar/dnd5e-spell-advancement
-- **AUDIT_FAILED**: Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/dnd5e-spell-advancement.git', '/tmp/tmp1dwm96ag/dnd5e-spell-advancement']' returned non-zero exit status 128.
+- **AUDIT_FAILED**: Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/dnd5e-spell-advancement.git', '/tmp/tmpp2_6yty8/dnd5e-spell-advancement']' returned non-zero exit status 128.
 - Tarea Codex: revisar los hallazgos con sus archivos, adaptar lo necesario y ejecutar una prueba en Foundry con las dependencias indicadas. No cambiar verified automáticamente.
 
 ## foundryvtt-sinregistrar/translate-dnd5e-cleric-domains-2024-es
