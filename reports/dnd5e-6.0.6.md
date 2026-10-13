@@ -1,6 +1,6 @@
 # Informe DND5e — release-6.0.6
 
-Fecha UTC: 2026-10-13T00:38:50.495971+00:00
+Fecha UTC: 2026-10-13T14:10:44.134109+00:00
 Foundry objetivo: 14.368
 Comparación: release-6.0.5 → release-6.0.6
 
@@ -11,13 +11,13 @@ Auditoría estática: PASS no acredita compatibilidad funcional. ERROR indica fa
 | foundryvtt-sinregistrar/dnd5e-2024-cleric-domains | REVISAR | JavaScript/compendios | a0146b0455b0 |
 | foundryvtt-sinregistrar/dnd5e-2024-wizard-schools | REVISAR | JavaScript/compendios | 21678c2ee52b |
 | foundryvtt-sinregistrar/dnd5e-death-token-effects | REVISAR | JavaScript/compendios | 84682c6aaedb |
-| foundryvtt-sinregistrar/dnd5e-spell-advancement | ERROR DE AUDITORÍA | desconocido |  |
+| foundryvtt-sinregistrar/dnd5e-spell-advancement | REVISAR | JavaScript/compendios | 7a1300a0cbce |
 | foundryvtt-sinregistrar/translate-dnd5e-cleric-domains-2024-es | REVISAR | Babele + JavaScript | 3052e87972c3 |
 | foundryvtt-sinregistrar/translate-dnd5e-dm-2024-es | REVISAR | Babele + JavaScript | 9d5c50602aa0 |
-| foundryvtt-sinregistrar/translate-dnd5e-mm-2024-es | REVISAR | Babele + JavaScript | 4504a6b07fcf |
+| foundryvtt-sinregistrar/translate-dnd5e-mm-2024-es | REVISAR | Babele + JavaScript | 5f27530725d0 |
 | foundryvtt-sinregistrar/translate-dnd5e-phandelver-below-es | REVISAR | Babele + JavaScript | 9a8e09fa348d |
 | foundryvtt-sinregistrar/translate-dnd5e-phb-2024-es | REVISAR | Babele + JavaScript | bf60b2bf9520 |
-| foundryvtt-sinregistrar/translate-dnd5e-sdr2-es | REVISAR | Babele + JavaScript | 2e62ce0d0c13 |
+| foundryvtt-sinregistrar/translate-dnd5e-sdr2-es | REVISAR | Babele + JavaScript | 0ff80bc6f535 |
 | foundryvtt-sinregistrar/translate-dnd5e-tashas-cauldron | REVISAR | Babele + JavaScript | 3f2517cc5027 |
 | foundryvtt-sinregistrar/translate-dnd5e-tomb-annihilation-es | REVISAR | Babele + JavaScript | 685d93f03733 |
 | foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es | REVISAR | Babele + JavaScript | d8d7f38f763b |
@@ -43,7 +43,8 @@ Auditoría estática: PASS no acredita compatibilidad funcional. ERROR indica fa
 - Tarea Codex: revisar los hallazgos con sus archivos, adaptar lo necesario y ejecutar una prueba en Foundry con las dependencias indicadas. No cambiar verified automáticamente.
 
 ## foundryvtt-sinregistrar/dnd5e-spell-advancement
-- **AUDIT_FAILED**: Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/dnd5e-spell-advancement.git', '/tmp/tmppspvke4u/dnd5e-spell-advancement']' returned non-zero exit status 128.
+- **UNVERIFIED**: DND5e 6.0.6: verificación declarada 6.0.5
+- **RUNTIME_PENDING**: Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry
 - Tarea Codex: revisar los hallazgos con sus archivos, adaptar lo necesario y ejecutar una prueba en Foundry con las dependencias indicadas. No cambiar verified automáticamente.
 
 ## foundryvtt-sinregistrar/translate-dnd5e-cleric-domains-2024-es
