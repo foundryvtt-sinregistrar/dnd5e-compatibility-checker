@@ -55,10 +55,52 @@ def flatten(data, prefix=''):
     else: result.add(prefix)
     return result
 
+def audit_documentation(root, manifest, add):
+    """Check the repository-owned documentation conventions without parsing prose."""
+    readme = root / 'README.md'
+    english = root / 'README.en.md'
+    for path, counterpart, label in ((readme, 'README.en.md', 'README_ES_MISSING'),
+                                     (english, 'README.md', 'README_EN_MISSING')):
+        if not path.exists():
+            add('review', label, f'Falta {path.name}; consulta DOCUMENTATION.md')
+            continue
+        try:
+            text = path.read_text(encoding='utf-8-sig')
+        except UnicodeError as exc:
+            add('error', 'README_ENCODING', f'{path.name}: {exc}')
+            continue
+        if counterpart not in text:
+            add('review', 'README_LANGUAGE_LINK', f'{path.name} no enlaza a {counterpart}')
+        manifest_url = f'https://github.com/foundryvtt-sinregistrar/{manifest.get("id", "")}/releases/latest/download/module.json'
+        if manifest.get('id') and manifest_url not in text:
+            add('review', 'README_MANIFEST', f'{path.name} no incluye el manifiesto de la última release')
+    changelog = root / 'CHANGELOG.md'
+    if not changelog.exists():
+        add('review', 'CHANGELOG_MISSING', 'Falta CHANGELOG.md; consulta DOCUMENTATION.md')
+        return
+    try:
+        text = changelog.read_text(encoding='utf-8-sig')
+    except UnicodeError as exc:
+        add('error', 'CHANGELOG_ENCODING', f'CHANGELOG.md: {exc}')
+        return
+    if not re.search(r'(?m)^# Changelog\s*$', text):
+        add('review', 'CHANGELOG_TITLE', 'CHANGELOG.md debe comenzar con # Changelog')
+    if not re.search(r'(?m)^## \[Unreleased\]\s*$', text):
+        add('review', 'CHANGELOG_UNRELEASED', 'Falta la sección ## [Unreleased]')
+    headings = list(re.finditer(r'(?m)^## \[([^\]]+)\](?:\s+-\s+.+)?\s*$', text))
+    for index, heading in enumerate(headings):
+        if heading.group(1) == 'Unreleased':
+            continue
+        end = headings[index + 1].start() if index + 1 < len(headings) else len(text)
+        entry = text[heading.end():end]
+        if not re.search(r'(?m)^### (Added|Changed|Fixed|Removed|Security)\s*$', entry):
+            add('review', 'CHANGELOG_CATEGORY', f'La entrada [{heading.group(1)}] no tiene categoría editorial')
+
 def audit(root, target, foundry, upstream, old=None):
     findings = []
     def add(level, code, text): findings.append({'level':level, 'code':code, 'message':text})
     manifest = load(root / 'module.json')
+    audit_documentation(root, manifest, add)
     systems = manifest.get('relationships', {}).get('systems', [])
     system = next((s for s in systems if s.get('id') == 'dnd5e'), None)
     if system is None: add('review', 'SYSTEM_UNDECLARED', 'No declara relationships.systems.dnd5e')

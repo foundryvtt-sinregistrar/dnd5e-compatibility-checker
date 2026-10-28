@@ -53,6 +53,10 @@ python scripts/check.py --force
 
 Cambiar `foundry_version` en `config/settings.json` cuando cambie tu instalación y ejecutar con force. Actualmente se comprueba **14.368**, tomada de los manifiestos, no se supone que sea la versión instalada en tu equipo.
 
+## Documentación de módulos
+
+Los módulos nuevos se revisan también frente a la [guía documental](DOCUMENTATION.md). El auditor comprueba que incluyan `README.md` y `README.en.md` enlazados entre sí, el manifiesto de la última release y un `CHANGELOG.md` con `[Unreleased]`, versiones entre corchetes y al menos una categoría editorial por versión publicada. Los incumplimientos se informan como **REVISAR** para no confundir una deficiencia documental con un fallo funcional.
+
 ## Informes y recuperación
 
 `reports/dnd5e-VERSION.md` contiene resumen y tareas de revisión; el JSON conserva hallazgos y commits para procesamiento. `reports/state.json` identifica la última release auditada completamente. La primera ejecución no compara claves contra una versión previa. Cada release tiene un Issue consolidado identificable mediante un marcador; force actualiza ese Issue incluso si está cerrado. Los informes de una misma versión se reemplazan con force; Git conserva sus versiones anteriores. Los artifacts duran 90 días.

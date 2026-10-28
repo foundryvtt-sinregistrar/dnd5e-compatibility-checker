@@ -37,4 +37,18 @@ class Checks(unittest.TestCase):
             (mod/'main.js').write_text('const key = "DND5E.Removed"; const path = "systems/dnd5e/templates/missing.hbs";')
             result=audit(mod,'6.0.5','14.368',new,old)
             self.assertTrue({'REMOVED_I18N','UPSTREAM_PATH'} <= {f['code'] for f in result['findings']})
+    def test_documentation_conventions(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d); upstream=root/'upstream'; (upstream/'lang').mkdir(parents=True)
+            (upstream/'lang/en.json').write_text('{"DND5E":{}}')
+            (root/'module.json').write_text(json.dumps({'id':'example-module','compatibility':{'verified':'14.368'},'relationships':{'systems':[{'id':'dnd5e','compatibility':{'verified':'6.0.5'}}]}}))
+            result=audit(root,'6.0.5','14.368',upstream)
+            codes={f['code'] for f in result['findings']}
+            self.assertTrue({'README_ES_MISSING','README_EN_MISSING','CHANGELOG_MISSING'} <= codes)
+            (root/'README.md').write_text('[English](README.en.md)\nhttps://github.com/foundryvtt-sinregistrar/example-module/releases/latest/download/module.json\n', encoding='utf-8')
+            (root/'README.en.md').write_text('[Español](README.md)\nhttps://github.com/foundryvtt-sinregistrar/example-module/releases/latest/download/module.json\n', encoding='utf-8')
+            (root/'CHANGELOG.md').write_text('# Changelog\n\n## [Unreleased]\n\n## [1.0.0] - 2026-10-29\n\n### Added\n\n- First release.\n', encoding='utf-8')
+            result=audit(root,'6.0.5','14.368',upstream)
+            codes={f['code'] for f in result['findings']}
+            self.assertFalse(any(code.startswith('README_') or code.startswith('CHANGELOG_') for code in codes), codes)
 if __name__=='__main__': unittest.main()
