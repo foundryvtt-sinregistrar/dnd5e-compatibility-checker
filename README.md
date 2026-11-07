@@ -51,7 +51,7 @@ python scripts/check.py --force
 
 `GH_TOKEN` es opcional para lectura pública; evita límites bajos de API sin autenticación. El token de Actions solo se utiliza contra la API de GitHub; las clonaciones son públicas y no reciben credenciales. Repositorios privados no están cubiertos.
 
-Cambiar `foundry_version` en `config/settings.json` cuando cambie tu instalación y ejecutar con force. Actualmente se comprueba **14.368**, tomada de los manifiestos, no se supone que sea la versión instalada en tu equipo.
+Cambiar `foundry_version` en `config/settings.json` cuando cambie tu instalación y ejecutar con force. Actualmente se comprueba **14.370**, tomada de los manifiestos, no se supone que sea la versión instalada en tu equipo.
 
 ## Documentación de módulos
 
