@@ -1,7 +1,7 @@
 {
   "tag": "release-6.1.0",
   "previous": "release-6.0.6",
-  "date": "2026-11-12T23:38:08.023670+00:00",
+  "date": "2026-11-13T06:43:14.030632+00:00",
   "foundry": "14.370",
   "release_url": "https://github.com/foundryvtt/dnd5e/releases/tag/release-6.1.0",
   "modules": [
@@ -131,7 +131,7 @@
       "findings": [
         {
           "code": "AUDIT_FAILED",
-          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmpkg9l5zey/patrol-intelligence']' returned non-zero exit status 128.",
+          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmpx5k31_6s/patrol-intelligence']' returned non-zero exit status 128.",
           "level": "error"
         }
       ]
