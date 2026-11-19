@@ -1,7 +1,7 @@
 {
   "tag": "release-6.1.1",
   "previous": "release-6.0.6",
-  "date": "2026-11-19T07:23:45.950529+00:00",
+  "date": "2026-11-19T20:35:32.355537+00:00",
   "foundry": "14.370",
   "release_url": "https://github.com/foundryvtt/dnd5e/releases/tag/release-6.1.1",
   "modules": [
@@ -131,7 +131,7 @@
       "findings": [
         {
           "code": "AUDIT_FAILED",
-          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmp4cqnlfax/patrol-intelligence']' returned non-zero exit status 128.",
+          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmp7pe5ev_p/patrol-intelligence']' returned non-zero exit status 128.",
           "level": "error"
         }
       ]
@@ -288,7 +288,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-sdr2-es",
-      "sha": "280fb0fd7b759989071e8a3e43cb1c959352d8ba",
+      "sha": "9fa3ce88b22737fd810343455616563783943679",
       "id": "translate-dnd5e-sdr2-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
