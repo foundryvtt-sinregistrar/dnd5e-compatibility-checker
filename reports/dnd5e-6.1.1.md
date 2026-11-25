@@ -1,6 +1,6 @@
 # Informe DND5e — release-6.1.1
 
-Fecha UTC: 2026-11-24T22:25:31.779509+00:00
+Fecha UTC: 2026-11-25T08:30:52.289419+00:00
 Foundry objetivo: 14.370
 Comparación: release-6.0.6 → release-6.1.1
 
@@ -58,7 +58,7 @@ Auditoría estática: PASS no acredita compatibilidad funcional. ERROR indica fa
 - Tarea Codex: revisar los hallazgos con sus archivos, adaptar lo necesario y ejecutar una prueba en Foundry con las dependencias indicadas. No cambiar verified automáticamente.
 
 ## foundryvtt-sinregistrar/patrol-intelligence
-- **AUDIT_FAILED**: Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmpuf6kte2r/patrol-intelligence']' returned non-zero exit status 128.
+- **AUDIT_FAILED**: Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmpgv2ay2ao/patrol-intelligence']' returned non-zero exit status 128.
 - Tarea Codex: revisar los hallazgos con sus archivos, adaptar lo necesario y ejecutar una prueba en Foundry con las dependencias indicadas. No cambiar verified automáticamente.
 
 ## foundryvtt-sinregistrar/translate-dnd5e-cleric-domains-2024-es
