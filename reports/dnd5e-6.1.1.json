@@ -1,7 +1,7 @@
 {
   "tag": "release-6.1.1",
   "previous": "release-6.0.6",
-  "date": "2026-11-26T08:15:07.226430+00:00",
+  "date": "2026-11-26T21:29:54.250769+00:00",
   "foundry": "14.370",
   "release_url": "https://github.com/foundryvtt/dnd5e/releases/tag/release-6.1.1",
   "modules": [
@@ -19,7 +19,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/dnd5e-2024-cleric-domains",
-      "sha": "991dc7a4d6f6a895332805b3d18800442d29a500",
+      "sha": "5333fd9dee86ae4cbd0abddfe2d80a1500bf3675",
       "id": "dnd5e-2024-cleric-domains",
       "type": "JavaScript/compendios",
       "status": "REVISAR",
@@ -48,7 +48,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/dnd5e-2024-wizard-schools",
-      "sha": "9b777d3f5b8c0d7a54e88b735ac82c929456ea68",
+      "sha": "fe64611de486be564f76a0f1dac78947b24969d4",
       "id": "dnd5e-2024-wizard-schools",
       "type": "JavaScript/compendios",
       "status": "REVISAR",
@@ -77,7 +77,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/dnd5e-death-token-effects",
-      "sha": "40bd8e0f987b33f7edff0b24f58bdad11730561c",
+      "sha": "834315b45b812df3b27b953edc8588dfe96a1752",
       "id": "dnd5e-death-token-effects",
       "type": "JavaScript/compendios",
       "status": "REVISAR",
@@ -95,8 +95,52 @@
       ]
     },
     {
+      "repo": "foundryvtt-sinregistrar/dnd5e-durability-crafting",
+      "sha": "69d4c906c60e64705d100928d1d147dc6bdb82b2",
+      "id": "dnd5e-durability-crafting",
+      "type": "JavaScript/compendios",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "README_LANGUAGE_LINK",
+          "message": "README.md no enlaza a README.en.md"
+        },
+        {
+          "level": "review",
+          "code": "README_MANIFEST",
+          "message": "README.md no incluye el manifiesto de la última release"
+        },
+        {
+          "level": "review",
+          "code": "README_EN_MISSING",
+          "message": "Falta README.en.md; consulta DOCUMENTATION.md"
+        },
+        {
+          "level": "review",
+          "code": "CHANGELOG_TITLE",
+          "message": "CHANGELOG.md debe comenzar con # Changelog"
+        },
+        {
+          "level": "review",
+          "code": "CHANGELOG_UNRELEASED",
+          "message": "Falta la sección ## [Unreleased]"
+        },
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.1: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        }
+      ]
+    },
+    {
       "repo": "foundryvtt-sinregistrar/dnd5e-spell-advancement",
-      "sha": "405661f9555515ced22e2e056924eba8e739c4ab",
+      "sha": "bfacda3a87773c1f65ee95c3c181c346221826da",
       "id": "dnd5e-spell-advancement",
       "type": "JavaScript/compendios",
       "status": "REVISAR",
@@ -131,14 +175,14 @@
       "findings": [
         {
           "code": "AUDIT_FAILED",
-          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmpu82abnz0/patrol-intelligence']' returned non-zero exit status 128.",
+          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmpmwykvri1/patrol-intelligence']' returned non-zero exit status 128.",
           "level": "error"
         }
       ]
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-cleric-domains-2024-es",
-      "sha": "8b1dfaa232a131464c71bc7c1286185e36ee5125",
+      "sha": "e36ac9f3feb1729c5f170c81f00e8bca52492f0b",
       "id": "translate-dnd5e-cleric-domains-2024-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
@@ -167,7 +211,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-dm-2024-es",
-      "sha": "d2c7d12041eaf02328d45ce7237134aa1074be39",
+      "sha": "9b29ea4f1f5de71a0b7fccde7c5419bd66fba79c",
       "id": "translate-dnd5e-dm-2024-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
@@ -201,7 +245,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-mm-2024-es",
-      "sha": "bacaaefddfdc580b33e7ca4fd322c54bb5f775ae",
+      "sha": "5908ba1b06a3c6e379a88ca03fd84f2cbb500bef",
       "id": "translate-dnd5e-mm-2024-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
@@ -230,7 +274,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-phandelver-below-es",
-      "sha": "aa0816160d36151699354f9021237ff00062480e",
+      "sha": "fdceab3d55a23e7750234be3f42af636fd884363",
       "id": "translate-dnd5e-phandelver-below-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
@@ -259,7 +303,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-phb-2024-es",
-      "sha": "bb86cce0f90cc0e2dd896a4086517d41045d7a7b",
+      "sha": "c8fba2a91e0aa3fa62ba5e552da09045103d65a8",
       "id": "translate-dnd5e-phb-2024-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
@@ -288,7 +332,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-sdr2-es",
-      "sha": "1432254a06abece61ce3270a2b6d6092df4bece5",
+      "sha": "94b00f026178f0602cdef399dc707034514548a4",
       "id": "translate-dnd5e-sdr2-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
@@ -312,7 +356,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-tashas-cauldron",
-      "sha": "f6983bf880da5b1f8aee719978cd7904de0f3c61",
+      "sha": "0268d91debd23ed50febcc0feedcee478f2331a0",
       "id": "translate-dnd5e-tashas-cauldron",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
@@ -370,7 +414,7 @@
     },
     {
       "repo": "foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es",
-      "sha": "ce1dff6982177788d7bbd39712398d7d695f8602",
+      "sha": "e5eadbe885c17f372971f40015b2c708082a7583",
       "id": "translate-dnd5e-wizard-schools-2024-es",
       "type": "Babele + JavaScript",
       "status": "REVISAR",
