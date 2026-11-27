@@ -1,0 +1,446 @@
+{
+  "tag": "release-6.1.2",
+  "previous": "release-6.0.6",
+  "date": "2026-11-27T08:29:45.664176+00:00",
+  "foundry": "14.370",
+  "release_url": "https://github.com/foundryvtt/dnd5e/releases/tag/release-6.1.2",
+  "modules": [
+    {
+      "repo": "foundryvtt-sinregistrar/.github",
+      "sha": "a2225c1e744d7757b9c614cf10becfc1abeb32c6",
+      "status": "NO APLICA",
+      "findings": [
+        {
+          "code": "NO_MANIFEST",
+          "message": "Sin module.json en raíz",
+          "level": "info"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/dnd5e-2024-cleric-domains",
+      "sha": "5333fd9dee86ae4cbd0abddfe2d80a1500bf3675",
+      "id": "dnd5e-2024-cleric-domains",
+      "type": "JavaScript/compendios",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "PACK_RUNTIME",
+          "message": "Rutas comprobadas; bases LevelDB y migraciones requieren importación en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-players-handbook"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/dnd5e-2024-wizard-schools",
+      "sha": "fe64611de486be564f76a0f1dac78947b24969d4",
+      "id": "dnd5e-2024-wizard-schools",
+      "type": "JavaScript/compendios",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "PACK_RUNTIME",
+          "message": "Rutas comprobadas; bases LevelDB y migraciones requieren importación en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-players-handbook"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/dnd5e-death-token-effects",
+      "sha": "834315b45b812df3b27b953edc8588dfe96a1752",
+      "id": "dnd5e-death-token-effects",
+      "type": "JavaScript/compendios",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/dnd5e-durability-crafting",
+      "sha": "69d4c906c60e64705d100928d1d147dc6bdb82b2",
+      "id": "dnd5e-durability-crafting",
+      "type": "JavaScript/compendios",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "README_LANGUAGE_LINK",
+          "message": "README.md no enlaza a README.en.md"
+        },
+        {
+          "level": "review",
+          "code": "README_MANIFEST",
+          "message": "README.md no incluye el manifiesto de la última release"
+        },
+        {
+          "level": "review",
+          "code": "README_EN_MISSING",
+          "message": "Falta README.en.md; consulta DOCUMENTATION.md"
+        },
+        {
+          "level": "review",
+          "code": "CHANGELOG_TITLE",
+          "message": "CHANGELOG.md debe comenzar con # Changelog"
+        },
+        {
+          "level": "review",
+          "code": "CHANGELOG_UNRELEASED",
+          "message": "Falta la sección ## [Unreleased]"
+        },
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/dnd5e-spell-advancement",
+      "sha": "bfacda3a87773c1f65ee95c3c181c346221826da",
+      "id": "dnd5e-spell-advancement",
+      "type": "JavaScript/compendios",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/foundryvtt-sinregistrar",
+      "sha": "1e32436c23b3819202a4b589243807bf69d67cbd",
+      "status": "NO APLICA",
+      "findings": [
+        {
+          "code": "NO_MANIFEST",
+          "message": "Sin module.json en raíz",
+          "level": "info"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/patrol-intelligence",
+      "status": "ERROR DE AUDITORÍA",
+      "findings": [
+        {
+          "code": "AUDIT_FAILED",
+          "message": "Command '['git', '-c', 'advice.detachedHead=false', 'clone', '--quiet', '--depth=1', '--branch', 'main', 'https://github.com/foundryvtt-sinregistrar/patrol-intelligence.git', '/tmp/tmpd38l65qc/patrol-intelligence']' returned non-zero exit status 128.",
+          "level": "error"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-cleric-domains-2024-es",
+      "sha": "e36ac9f3feb1729c5f170c81f00e8bca52492f0b",
+      "id": "translate-dnd5e-cleric-domains-2024-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd5e-2024-cleric-domains, dnd-players-handbook"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-dm-2024-es",
+      "sha": "9b29ea4f1f5de71a0b7fccde7c5419bd66fba79c",
+      "id": "translate-dnd5e-dm-2024-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "UPSTREAM_PATH",
+          "message": "dev-tools/translation/validate-target-labels.mjs: ruta no encontrada systems/dnd5e/lang/en.js"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-dungeon-masters-guide"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-mm-2024-es",
+      "sha": "5908ba1b06a3c6e379a88ca03fd84f2cbb500bef",
+      "id": "translate-dnd5e-mm-2024-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-monster-manual"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-phandelver-below-es",
+      "sha": "fdceab3d55a23e7750234be3f42af636fd884363",
+      "id": "translate-dnd5e-phandelver-below-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-phandelver-below"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-phb-2024-es",
+      "sha": "c8fba2a91e0aa3fa62ba5e552da09045103d65a8",
+      "id": "translate-dnd5e-phb-2024-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-players-handbook"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-sdr2-es",
+      "sha": "94b00f026178f0602cdef399dc707034514548a4",
+      "id": "translate-dnd5e-sdr2-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-tashas-cauldron",
+      "sha": "0268d91debd23ed50febcc0feedcee478f2331a0",
+      "id": "translate-dnd5e-tashas-cauldron",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-tashas-cauldron"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-tomb-annihilation-es",
+      "sha": "c48e020177361b55369eb981291da328ca490c0d",
+      "id": "translate-dnd5e-tomb-annihilation-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd-tomb-annihilation"
+        }
+      ]
+    },
+    {
+      "repo": "foundryvtt-sinregistrar/translate-dnd5e-wizard-schools-2024-es",
+      "sha": "e5eadbe885c17f372971f40015b2c708082a7583",
+      "id": "translate-dnd5e-wizard-schools-2024-es",
+      "type": "Babele + JavaScript",
+      "status": "REVISAR",
+      "findings": [
+        {
+          "level": "review",
+          "code": "UNVERIFIED",
+          "message": "DND5e 6.1.2: verificación declarada 6.0.6"
+        },
+        {
+          "level": "review",
+          "code": "BABELE_COVERAGE",
+          "message": "JSON validado; IDs, nombres, mappings y cobertura requieren los compendios originales y prueba Babele"
+        },
+        {
+          "level": "review",
+          "code": "RUNTIME_PENDING",
+          "message": "Sintaxis comprobada; hooks, APIs y comportamiento requieren prueba en Foundry"
+        },
+        {
+          "level": "review",
+          "code": "DEPENDENCIES",
+          "message": "Dependencias no instaladas en esta auditoría: dnd5e-2024-wizard-schools, dnd-players-handbook"
+        }
+      ]
+    }
+  ],
+  "upstream_sha": "75750bf1b8bd79f8448af40495c8bb5c99f49551"
+}
